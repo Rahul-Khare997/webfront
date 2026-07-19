@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Webfront — Websites that bring customers to your door</title>
+<meta name="description" content="Webfront builds modern, affordable websites for local businesses in India, the US and Canada. Live in 7 days. Everything included, one monthly price." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top">
+    <span class="nav__logo-mark">w.</span>Webfront
+  </a>
+  <nav class="nav__links">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav__actions">
+    <label class="region-select" title="Choose your region">
+      <span class="region-select__flag" id="region-flag">🇮🇳</span>
+      <select id="region" aria-label="Select region and currency">
+        <option value="IN">India · ₹ INR</option>
+        <option value="US">United States · $ USD</option>
+        <option value="CA">Canada · C$ CAD</option>
+      </select>
+    </label>
+    <a class="btn btn--primary btn--magnetic" href="#contact"><span>Get your site</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <p class="hero__eyebrow reveal"><span class="pulse-dot"></span> Taking new clients — India · US · Canada</p>
+    <h1 class="hero__title">
+      <span class="hero__line"><span>Your business deserves</span></span>
+      <span class="hero__line"><span>more than a</span></span>
+      <span class="hero__line hero__line--accent"><span><em>missing website.</em></span></span>
+    </h1>
+    <p class="hero__sub reveal">We build fast, beautiful websites for local businesses —
+    salons, clinics, restaurants, stores. Live in 7 days. From <strong><span data-money="from">₹2,499</span>/month</strong>,
+    everything included.</p>
+
+    <div class="hero__cta reveal">
+      <a class="btn btn--primary btn--lg btn--magnetic" href="#contact"><span>See your business online →</span></a>
+      <a class="btn btn--ghost btn--lg btn--magnetic" href="#work"><span>View our work</span></a>
+    </div>
+
+    <div class="hero__stats reveal">
+      <div class="stat">
+        <span class="stat__num" data-count="7">0</span><span class="stat__unit">days</span>
+        <span class="stat__label">idea to live site</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num stat__num--money" data-money="from">₹2,499</span><span class="stat__unit">/mo</span>
+        <span class="stat__label">all-inclusive, from</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="100">0</span><span class="stat__unit">%</span>
+        <span class="stat__label">done for you</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ══════════ MARQUEE ══════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Salons</span><i>✦</i><span>Clinics</span><i>✦</i><span>Restaurants</span><i>✦</i>
+    <span>Boutiques</span><i>✦</i><span>Gyms</span><i>✦</i><span>Coffee Shops</span><i>✦</i>
+    <span>Real Estate</span><i>✦</i><span>Florists</span><i>✦</i><span>Auto Shops</span><i>✦</i>
+    <span>Salons</span><i>✦</i><span>Clinics</span><i>✦</i><span>Restaurants</span><i>✦</i>
+    <span>Boutiques</span><i>✦</i><span>Gyms</span><i>✦</i><span>Coffee Shops</span><i>✦</i>
+    <span>Real Estate</span><i>✦</i><span>Florists</span><i>✦</i><span>Auto Shops</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ══════════ SERVICES / BENTO ══════════ -->
+<section class="section" id="services">
+  <div class="section__head reveal">
+    <p class="section__eyebrow">What we do</p>
+    <h2 class="section__title">Everything your business<br/>needs to be <em>found online.</em></h2>
+  </div>
+
+  <div class="bento">
+    <article class="bento__card bento__card--hero tilt reveal">
+      <div class="bento__num">01</div>
+      <h3>Website, built &amp; hosted</h3>
+      <p>A modern, mobile-first website designed for your business. We write the content,
+      shoot nothing on stock — your shop, your story. Hosting, domain and SSL included.</p>
+      <div class="bento__visual bento__visual--browser" aria-hidden="true">
+        <div class="mini-browser">
+          <div class="mini-browser__bar"><i></i><i></i><i></i></div>
+          <div class="mini-browser__body">
+            <div class="sk sk--hero"></div>
+            <div class="sk-row"><div class="sk sk--card"></div><div class="sk sk--card"></div><div class="sk sk--card"></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bento__card tilt reveal">
+      <div class="bento__num">02</div>
+      <h3>Google Business &amp; Maps</h3>
+      <p>Show up when someone searches “salon near me”. Profile, photos, reviews — handled.</p>
+      <div class="bento__pin" aria-hidden="true">📍</div>
+    </article>
+
+    <article class="bento__card tilt reveal">
+      <div class="bento__num">03</div>
+      <h3>Bookings &amp; appointments</h3>
+      <p>Customers book online or message you in one tap — WhatsApp, SMS or email, your choice.</p>
+      <div class="bento__pin" aria-hidden="true">📅</div>
+    </article>
+
+    <article class="bento__card tilt reveal">
+      <div class="bento__num">04</div>
+      <h3>Reviews &amp; reputation</h3>
+      <p>Collect 5-star reviews on autopilot, and reply to the bad ones before they hurt.</p>
+      <div class="bento__pin" aria-hidden="true">⭐</div>
+    </article>
+
+    <article class="bento__card tilt reveal">
+      <div class="bento__num">05</div>
+      <h3>Payments &amp; online store</h3>
+      <p>Sell products, take deposits, accept cards, UPI or Apple&nbsp;Pay — right on your site.</p>
+      <div class="bento__pin" aria-hidden="true">💳</div>
+    </article>
+
+    <article class="bento__card tilt reveal">
+      <div class="bento__num">06</div>
+      <h3>Local SEO &amp; ads</h3>
+      <p>Rank for the searches that matter in your neighbourhood, plus Google Ads that pay for themselves.</p>
+      <div class="bento__pin" aria-hidden="true">📈</div>
+    </article>
+
+    <article class="bento__card tilt reveal">
+      <div class="bento__num">07</div>
+      <h3>AI assistant &amp; analytics</h3>
+      <p>A chat assistant that answers customers 24/7, and a monthly report you can actually read.</p>
+      <div class="bento__pin" aria-hidden="true">🤖</div>
+    </article>
+
+    <article class="bento__card bento__card--wide tilt reveal">
+      <div class="bento__num">08</div>
+      <h3>Care plan — never think about it again</h3>
+      <p>Updates, menu changes, seasonal offers, new photos — message us and it's live
+      the same day. No tickets, no waiting, no surprise bills.</p>
+      <div class="bento__chips" aria-hidden="true">
+        <span>Same-day edits</span><span>Backups</span><span>Security</span><span>Uptime watch</span><span>Priority support</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════ WORK ══════════ -->
+<section class="section section--full" id="work">
+  <div class="section__head reveal">
+    <p class="section__eyebrow">Recent work</p>
+    <h2 class="section__title">Sites that make local businesses<br/>look like <em>big brands.</em></h2>
+  </div>
+
+  <div class="work-grid">
+    <figure class="work-card tilt reveal" data-tint="rose">
+      <div class="work-card__screen">
+        <div class="fake-site fake-site--salon">
+          <div class="fake-site__nav"></div>
+          <div class="fake-site__hero"><b>GLOW &amp; CO.</b><span>Luxury salon · Bengaluru 🇮🇳</span></div>
+          <div class="fake-site__row"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <figcaption><strong>Glow &amp; Co. Salon</strong><span>Bookings up 3× in 2 months</span></figcaption>
+    </figure>
+
+    <figure class="work-card tilt reveal" data-tint="amber">
+      <div class="work-card__screen">
+        <div class="fake-site fake-site--cafe">
+          <div class="fake-site__nav"></div>
+          <div class="fake-site__hero"><b>MAPLE &amp; OAK</b><span>Coffee roasters · Toronto 🇨🇦</span></div>
+          <div class="fake-site__row"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <figcaption><strong>Maple &amp; Oak Coffee</strong><span>#1 on Google Maps locally</span></figcaption>
+    </figure>
+
+    <figure class="work-card tilt reveal" data-tint="mint">
+      <div class="work-card__screen">
+        <div class="fake-site fake-site--clinic">
+          <div class="fake-site__nav"></div>
+          <div class="fake-site__hero"><b>LAKEVIEW DENTAL</b><span>Clinic · Austin, TX 🇺🇸</span></div>
+          <div class="fake-site__row"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <figcaption><strong>Lakeview Dental</strong><span>40+ appointments a month via site</span></figcaption>
+    </figure>
+
+    <figure class="work-card tilt reveal" data-tint="violet">
+      <div class="work-card__screen">
+        <div class="fake-site fake-site--gym">
+          <div class="fake-site__nav"></div>
+          <div class="fake-site__hero"><b>IRONWORKS</b><span>Strength gym · Mumbai 🇮🇳</span></div>
+          <div class="fake-site__row"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <figcaption><strong>IronWorks Gym</strong><span>120 trial signups in first month</span></figcaption>
+    </figure>
+
+    <figure class="work-card tilt reveal" data-tint="blush">
+      <div class="work-card__screen">
+        <div class="fake-site fake-site--florist">
+          <div class="fake-site__nav"></div>
+          <div class="fake-site__hero"><b>PETAL &amp; STEM</b><span>Florist · Vancouver 🇨🇦</span></div>
+          <div class="fake-site__row"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <figcaption><strong>Petal &amp; Stem Florist</strong><span>Online orders now 45% of revenue</span></figcaption>
+    </figure>
+
+    <figure class="work-card tilt reveal" data-tint="gold">
+      <div class="work-card__screen">
+        <div class="fake-site fake-site--bistro">
+          <div class="fake-site__nav"></div>
+          <div class="fake-site__hero"><b>SAFFRON HOUSE</b><span>Modern Indian bistro · New Jersey 🇺🇸</span></div>
+          <div class="fake-site__row"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <figcaption><strong>Saffron House Bistro</strong><span>Weekend tables fully booked online</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══════════ PROCESS ══════════ -->
+<section class="section" id="process">
+  <div class="section__head reveal">
+    <p class="section__eyebrow">How it works</p>
+    <h2 class="section__title">From handshake to homepage<br/>in <em>seven days.</em></h2>
+  </div>
+
+  <ol class="steps">
+    <li class="step reveal">
+      <span class="step__day">Day 1</span>
+      <h3>We meet, we listen</h3>
+      <p>Tell us about your business over chai or coffee — in person or on a call. We learn your customers.</p>
+    </li>
+    <li class="step reveal">
+      <span class="step__day">Day 3</span>
+      <h3>You see the demo</h3>
+      <p>A working preview of your site on your own phone. Change anything you like.</p>
+    </li>
+    <li class="step reveal">
+      <span class="step__day">Day 5</span>
+      <h3>We polish &amp; connect</h3>
+      <p>Domain, Google Business, bookings, reviews, payments — all wired up.</p>
+    </li>
+    <li class="step reveal">
+      <span class="step__day">Day 7</span>
+      <h3>You go live 🎉</h3>
+      <p>Your business is online, searchable, and open 24/7 — even when the doors are closed.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ══════════ PRICING ══════════ -->
+<section class="section" id="pricing">
+  <div class="section__head reveal">
+    <p class="section__eyebrow">Simple pricing</p>
+    <h2 class="section__title">One monthly price.<br/><em>Everything included.</em></h2>
+    <p class="pricing__region-hint">Prices shown in <strong data-region-name>India · INR</strong> — change region from the menu above.</p>
+  </div>
+
+  <div class="assurance reveal" aria-label="Our guarantees">
+    <div class="assurance__item"><b>Free demo first</b><span>see it before you pay</span></div>
+    <div class="assurance__item"><b>30-day money back</b><span>no questions asked</span></div>
+    <div class="assurance__item"><b>No lock-in</b><span>cancel anytime, keep your domain</span></div>
+  </div>
+
+  <div class="pricing">
+    <article class="price-card reveal">
+      <h3>Starter</h3>
+      <p class="price-card__for">For single-location businesses getting online</p>
+      <div class="price-card__amount"><span data-money="starter">₹2,499</span><span>/month</span></div>
+      <ul>
+        <li>5-page modern website</li>
+        <li>Hosting + domain + SSL</li>
+        <li>Contact &amp; enquiry forms</li>
+        <li>WhatsApp / SMS contact button</li>
+        <li>Mobile-first design</li>
+        <li>2 content edits per month</li>
+      </ul>
+      <a class="btn btn--ghost btn--magnetic" href="#contact"><span>Start with Starter</span></a>
+    </article>
+
+    <article class="price-card price-card--featured reveal">
+      <span class="price-card__badge">Most popular</span>
+      <h3>Growth</h3>
+      <p class="price-card__for">For businesses that want more customers</p>
+      <div class="price-card__amount"><span data-money="growth">₹4,999</span><span>/month</span></div>
+      <ul>
+        <li>Everything in Starter</li>
+        <li>Google Business setup + optimisation</li>
+        <li>Review collection system</li>
+        <li>Online bookings / ordering</li>
+        <li>Unlimited same-day edits</li>
+        <li>AI chat assistant</li>
+        <li>Monthly performance report</li>
+      </ul>
+      <a class="btn btn--primary btn--magnetic" href="#contact"><span>Grow with Growth</span></a>
+    </article>
+
+    <article class="price-card reveal">
+      <h3>Pro</h3>
+      <p class="price-card__for">For multi-location &amp; ambitious businesses</p>
+      <div class="price-card__amount"><span data-money="pro">₹9,999</span><span>/month</span></div>
+      <ul>
+        <li>Everything in Growth</li>
+        <li>Local SEO + Google Ads management</li>
+        <li>Online payments / full store</li>
+        <li>Multi-location pages</li>
+        <li>Custom features on request</li>
+        <li>Priority support</li>
+      </ul>
+      <a class="btn btn--ghost btn--magnetic" href="#contact"><span>Go Pro</span></a>
+    </article>
+  </div>
+  <p class="pricing__note reveal" data-region-note>No setup fees on annual plans · Cancel anytime · UPI autopay supported</p>
+</section>
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section class="section section--quotes">
+  <div class="quotes">
+    <blockquote class="quote reveal">
+      <p>“Customers now say <em>‘I found you on Google’</em>. That never happened in 12 years of business.”</p>
+      <footer>— Ramesh B., Boutique owner, Bengaluru 🇮🇳</footer>
+    </blockquote>
+    <blockquote class="quote reveal">
+      <p>“They showed me my website <em>before I paid anything</em>. That's when I said yes.”</p>
+      <footer>— Sarah M., Coffee shop owner, Toronto 🇨🇦</footer>
+    </blockquote>
+    <blockquote class="quote reveal">
+      <p>“Online booking runs itself now. <em>The site pays for itself every single week.</em>”</p>
+      <footer>— Dr. James L., Dental clinic, Austin 🇺🇸</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="section" id="faq">
+  <div class="section__head reveal">
+    <p class="section__eyebrow">Questions</p>
+    <h2 class="section__title">Everything owners<br/>usually <em>ask us.</em></h2>
+  </div>
+
+  <div class="faq">
+    <details class="faq__item reveal">
+      <summary>How fast will my website be live?</summary>
+      <p>Seven days from our first conversation, for most businesses. You see a working demo by day 3, and nothing goes live until you approve it.</p>
+    </details>
+    <details class="faq__item reveal">
+      <summary>Do I own my website and domain?</summary>
+      <p>Yes. The domain is registered in your name, always. If you ever leave, you keep the domain and we hand over your content — no hostage situations.</p>
+    </details>
+    <details class="faq__item reveal">
+      <summary>What if I already have a website?</summary>
+      <p>We'll rebuild it properly, migrate your content and domain, and usually improve your Google ranking in the process. Redesigns are included in the monthly price.</p>
+    </details>
+    <details class="faq__item reveal">
+      <summary>Why monthly instead of one big payment?</summary>
+      <p>Because a website isn't a one-time thing — it needs hosting, updates, security and fresh content. One monthly price covers all of it, and keeps us motivated to keep your site working hard.</p>
+    </details>
+    <details class="faq__item reveal">
+      <summary>Do you work with businesses outside your city?</summary>
+      <p>Yes — we work with clients across India, the United States and Canada. Everything can be done over video calls and chat; you'll never feel the distance.</p>
+    </details>
+    <details class="faq__item reveal">
+      <summary>How do payments work?</summary>
+      <p data-region-pay>UPI autopay, cards or bank transfer — whatever suits you. Annual plans skip the setup fee.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ══════════ CTA ══════════ -->
+<section class="cta" id="contact">
+  <canvas id="cta-canvas" aria-hidden="true"></canvas>
+  <div class="cta__inner reveal">
+    <h2>See your business online<br/><em>before you pay a thing.</em></h2>
+    <p>We'll build a free demo homepage for your business and send it to you.
+    Like it? We go live. Don't? No hard feelings.</p>
+    <div class="cta__actions">
+      <a class="btn btn--primary btn--lg btn--magnetic" href="https://wa.me/919890555475?text=Hi%20Webfront!%20I%20want%20a%20free%20demo%20for%20my%20business." target="_blank" rel="noopener"><span>💬 Get my free demo</span></a>
+      <a class="btn btn--ghost btn--lg btn--magnetic" href="mailto:hello@webfront.studio"><span>Email us instead</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <a class="nav__logo" href="#top"><span class="nav__logo-mark">w.</span>Webfront</a>
+    <p>Modern websites for local businesses.<br/>India · United States · Canada.</p>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <p class="footer__fine">© 2026 Webfront. All rights reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
